@@ -127,6 +127,10 @@ button{
     text-align: left;
     margin-left: 5px;
 }
+button:hover{
+    background-color: #1a4031;
+    cursor: pointer;
+}
 
 footer{
     margin-top:15px;
