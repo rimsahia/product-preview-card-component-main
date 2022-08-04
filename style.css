@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+.mobile-image{
+    display:none;
+}
+
+body{
+    font-size: 14px;
+    background-color: hsl(30, 38%, 92%);
+}
+
+div.card{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-template-areas: 'picture cardtext';
+    width: 600px;
+    height: 450px;
+    margin: auto;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.cardtext{
+    display: grid;
+    grid-template-rows: 2fr 2fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'titles'
+                         'text'
+                         'button';
+}
+
+.desktop-image{
+    height: 450px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.titles{
+    grid-area: titles;
+}
+.text{
+    grid-area: text;
+}
+
+.btn{
+    grid-area: button;
+}
+
+.perfume,.text,.old-price{
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+
+.name{
+    font-family: 'Fraunces',serif;
+    color: hsl(212, 21%, 14%);
+    width: 80%;
+}
+
+.new-price{
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%)
+}
+
+.price{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 'new old';
+}
+
+.new-price{
+    grid-area: new;
+}
+.old-price{
+    grid-area: old;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration: line-through;
+}
+
+div.cardtext{
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 400px;
+}
+
+.perfume{
+    letter-spacing: 5px;
+    margin-top: 25px;
+}
+
+.price{
+    margin-top: 30px;
+}
+
+button{
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 60%;
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'icon addtext';
+}
+.btn-content{
+    align-items: center;
+    width: 60% ;
+    
+}
+.add-icon{
+    grid-area: icon;
+    margin-left: 55px;
+}
+.add-text{
+    grid-area: addtext;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 5px;
+}
+
+footer{
+    margin-top:15px;
+}
