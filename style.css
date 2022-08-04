@@ -135,3 +135,68 @@ button:hover{
 footer{
     margin-top:15px;
 }
+
+@media only screen and (max-width: 600px) and (orientation: portrait){
+    .desktop-image{
+        display: none;
+    }
+    
+    .mobile-image{
+        display: initial;
+        width: 100%;
+        margin: auto;
+    }
+
+    body{
+        font-size:x-small !important;
+    }
+
+    .card{
+        display: grid;
+        grid-template-rows: 2fr 3fr;
+        grid-template-columns: 1fr !important;
+        grid-template-areas: 'photo'
+                             'cardtext' !important;
+        width: 240px !important;
+        height: 415px !important;
+        
+    }
+    .mobile-image{
+        grid-area: photo;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .cardtext{
+        grid-area: cardtext;
+        display: grid;
+        grid-template-rows:repeat(3,1fr);
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+        margin-top: 0px !important;
+        
+    }
+    .perfume{
+        margin-top: 10px;
+    }
+    .name{
+        margin-top: 7px;
+    }
+    .text{
+        margin-top: -45px;
+    }
+    .price{
+        margin-top: -10px;
+        width: 60%;
+    }
+    .old-price{
+        margin-left: 10px;
+    }
+    .btn{
+        margin-top: -90px;
+        align-content: center;
+    }
+    button{
+        height: 20%;
+    }
+
+}
