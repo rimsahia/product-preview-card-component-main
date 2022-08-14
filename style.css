@@ -103,31 +103,19 @@ div.cardtext{
 button{
     background-color: hsl(158, 36%, 37%);
     color: white;
+    width: 100%;
+    height: 100%;
     border: none;
     border-radius: 10px;
-    height: 60%;
-    width:100%;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 'icon addtext';
-}
-.btn-content{
-    align-items: center;
-    width: 60% ;
-    
-}
-.add-icon{
-    grid-area: icon;
-    margin-left: 55px;
-}
-.add-text{
-    grid-area: addtext;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    text-align: left;
-    margin-left: 5px;
+   
 }
+.icon{
+    margin-right: 5px;
+}
+
+
 button:hover{
     background-color: #1a4031;
     cursor: pointer;
